@@ -6,7 +6,7 @@
 <br />
 <form>
 	Email:<input type="text" name="email" /><br />
-	<br /> Password:<input type="password" name="password" /><br /> <!marc is le garneaux!>
+	<br /> Password:<input type="password" name="password" /><br /> <!--marc is le garneaux!  -->
 	<br /> <input type="submit" value="Login" /> <input type="submit" value="Register"/>
 </form>
 </center>
