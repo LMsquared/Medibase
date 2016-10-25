@@ -12,7 +12,7 @@
 	<br /> Password:<input type="password" name="password" /><br />
 	<br /> <input type="submit" value="Login" /> 
 </form>
-<form action = "Register.jsp" method="post">
+<form action = "RegisterPage.jsp" method="post">
 <input type="submit" value="Register"/>
 </form>
 </center>
