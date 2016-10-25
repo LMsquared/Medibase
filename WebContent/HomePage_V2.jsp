@@ -73,8 +73,8 @@
 				</div>
 				<ul class="nav navbar-nav">
 					<li class="active"><a href="#">Home</a></li>
-					<li><a href="#">Find MD</a></li>
-					<li><a href="#">Register/New Account</a></li>
+					<li><a href="findMD.jsp">Find MD</a></li>
+					<li><a href="HomePage.jsp">Register/New Account</a></li>
 				</ul>
 			</div>
 		</nav>
