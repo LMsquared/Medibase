@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <title>Medibase Home</title>
-<meta charset="utf-8"> 
+<meta charset="utf-8">
 <meta name="viewport"
 	content="width=device-width, height=device-height, initial-scale=1">
 <link rel="stylesheet"
@@ -35,8 +35,9 @@
 			<div class="carousel-inner" role="listbox">
 
 				<div class="item active">
-					<a href="HomePage.jsp"> <img src="Medibase-wt.png" alt="Patient"
-						alt="Medibase logo" absolute-width="100%" absolute-height="100%">
+					<a href="HomePage.jsp"> <img src="Medibase-wt.png"
+						alt="Patient" alt="Medibase logo" absolute-width="100%"
+						absolute-height="100%">
 					</a>
 				</div>
 
@@ -64,6 +65,19 @@
 				</a>
 			</div>
 		</div>
+
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" >Medibase</a>
+				</div>
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">Home</a></li>
+					<li><a href="#">Find MD</a></li>
+					<li><a href="#">Register/New Account</a></li>
+				</ul>
+			</div>
+		</nav>
 </body>
 </html>
 
