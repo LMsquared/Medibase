@@ -14,8 +14,15 @@
 	<h5>This error is caused by incorrect URL</h5>
 
 
-	<button type="button" class="btn btn-primary btn-block"
-		ONCLICK=window.location= 'http://localhost:8080/Medibase/HomePage.jsp'>Return Home</button>
+	<button type="button" class="btn btn-primary btn-block" id="returnHome">
+	Return Home</button>
+
+	<script type="text/javascript">
+		document.getElementById("returnHome").onclick = function() {
+			location.href = "/Medibase/HomePage_V2.jsp";
+		};
+	</script>
+
 
 
 </body>

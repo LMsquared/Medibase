@@ -34,21 +34,21 @@
 			<!-- Wrapper for slides -->
 			<div class="carousel-inner" role="listbox">
 
-				<div class="item">
+				<div class="item active">
 					<a href="HomePage.jsp"> <img src="Medibase.png" alt="Patient"
-						width="80000" height="80000">
+						alt="Medibase logo" absolute-width="100%" absolute-height="100%">
 					</a>
 				</div>
 
-				<div class="item active">
+				<div class="item">
 					<a href="HomePage.jsp"> <img src="medical-banner.jpg"
-						alt="medical banner" width="80000" height="80000">
+						alt="medical banner" absolute-width="100%" absolute-height="100%">
 					</a>
 				</div>
 
 				<div class="item">
 					<a href="HomePage.jsp"> <img src="adminLogo.png"
-						alt="Admin Logo" width="80000" height="80000">
+						alt="admin Logo" absolute-width="100%" absolute-height="100%">
 					</a>
 				</div>
 
