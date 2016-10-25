@@ -1,7 +1,7 @@
 <hr />
 <center>
 
-<p> <img src="bsfreecapture.png" alt="Medi Image" /> </p>
+<p> <img src="Medibase.png" alt="Medi Image" /> </p>
 
 <br />
 <form>
