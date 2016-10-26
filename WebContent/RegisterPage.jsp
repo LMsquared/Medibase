@@ -8,7 +8,7 @@
 </head>
 <body>
 <hr />
-<p> <img src="bsfreecapture.png" alt="Medi Image" /> </p>
+<p> <img src="Medibase.png" alt="Medi Image" /> </p>
 <p>Enter your information below and hit Register to complete your account creation.</p>
 <br />
 <form action = "RegWelcome.jsp" method="post">

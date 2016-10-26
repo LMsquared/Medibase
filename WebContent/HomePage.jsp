@@ -4,7 +4,7 @@
 </head>
 <center>
 
-<p> <img src="bsfreecapture.png" alt="Medi Image" /> </p>
+<p> <img src="Medibase.png" alt="Medi Image" /> </p>
 
 <br />
 <form action = "Login.jsp" method="post">
@@ -16,3 +16,5 @@
 <input type="submit" value="Register"/>
 </form>
 </center>
+
+<hr />
