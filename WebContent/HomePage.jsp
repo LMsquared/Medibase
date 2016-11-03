@@ -1,12 +1,20 @@
 <hr />
+<head>
+<link rel="stylesheet" type="text/css" href="Initial.css">
+</head>
 <center>
 
-<p> <img src="bsfreecapture.png" alt="Medi Image" /> </p>
+<p> <img src="Medibase.png" alt="Medi Image" /> </p>
 
 <br />
-<form>
-	Email:<input type="text" name="email" /><br />
+<form action = "Login.jsp" method="post">
+	Email or Username:<input type="text" name="emailuser" /><br />
 	<br /> Password:<input type="password" name="password" /><br />
-	<br /> <input type="submit" value="Login" /> <input type="submit" value="Register"/>
+	<br /> <input type="submit" value="Login" /> 
+</form>
+<form action = "RegisterPage.jsp" method="post">
+<input type="submit" value="Register"/>
 </form>
 </center>
+
+<hr />
