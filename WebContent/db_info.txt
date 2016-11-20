@@ -1,0 +1,22 @@
+CREATE DATABASE Medibase;
+USE Medibase;
+
+CREATE TABLE userPatient_table (
+    patient_id INT NOT NULL AUTO_INCREMENT,
+    username VARCHAR(25) NOT NULL,
+    password VARCHAR(25) NOT NULL,
+    email VARCHAR(255),
+    PRIMARY KEY (patient_id)
+);
+                                
+
+CREATE TABLE userMedical_table (
+    medical_id INT NOT NULL AUTO_INCREMENT,
+    username VARCHAR(25) NOT NULL,
+    password VARCHAR(25) NOT NULL,
+    email VARCHAR(255),
+    street VARCHAR(100),
+    phonenumber VARCHAR(50),
+    credentials TEXT(500),
+    PRIMARY KEY (medical_id)
+);

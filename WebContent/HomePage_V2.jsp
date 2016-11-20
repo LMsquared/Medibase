@@ -8,16 +8,34 @@
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script
-	src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css"
+	href="WebContent/WEB-INF/styles/main.css" />
+
 <style>
 .carousel-inner>.item>img, .carousel-inner>.item>a>img {
 	absolute-width: 100%;
 	absolute-height: 100%;
 	margin: auto;
 }
+
+body {
+	background-color: #E0F8F5;
+}
+#footerDiv {
+	border-top-width: 5px;
+	background-color:#B9EDE6;
+	text-align: center;
+}
+searchBar{
+	border: 5px;
+	
+}
 </style>
+
 </head>
 <body>
 
@@ -26,9 +44,9 @@
 		<div id="myCarousel" class="carousel slide" data-ride="carousel">
 			<!-- Indicators -->
 			<ol class="carousel-indicators">
-				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-				<li data-target="#myCarousel" data-slide-to="1"></li>
-				<li data-target="#myCarousel" data-slide-to="2"></li>
+				<li data-target="patient" data-slide-to="0" class="active"></li>
+				<li data-target="medical" data-slide-to="1"></li>
+				<li data-target="admin" data-slide-to="2"></li>
 			</ol>
 
 			<!-- Wrapper for slides -->
@@ -66,18 +84,44 @@
 			</div>
 		</div>
 
-		<nav class="navbar navbar-default">
+		<nav class="navbar navbar-inverse">
 			<div class="container-fluid">
 				<div class="navbar-header">
-					<a class="navbar-brand" >Medibase</a>
+					<a class="navbar-brand">Medibase</a>
 				</div>
 				<ul class="nav navbar-nav">
-					<li class="active"><a href="#">Home</a></li>
+					<li class="active"><a href="HomePage_V2.jsp">Home</a></li>
 					<li><a href="findMD.jsp">Find MD</a></li>
 					<li><a href="HomePage.jsp">Register/New Account</a></li>
 				</ul>
 			</div>
 		</nav>
+
+		<div id="searchBar">
+			<form class="form-inline">
+					<label for="searchInput"></label> <input type="text"
+						placeholder="Enter Text to Search" class="form-control"
+						id="searchInput"> 
+					<select>
+						<option value="Doctor">Doctor</option>
+						<option value="Location">Location</option>
+						<option value="Specialty">Specialty</option>
+					</select>
+					<div class="container">
+					<br />
+						<button type="submit" class="btn btn-primary">Search</button>
+					</div>
+			</form>
+		</div>
+	</div>
+
+	<footer>
+	<br />
+	<br />
+		<div id="footerDiv">
+		<a href="AboutUs">About Us</a>
+		</div>
+	</footer>
 </body>
 </html>
 

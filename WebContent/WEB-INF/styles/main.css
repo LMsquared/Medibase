@@ -1,0 +1,16 @@
+@CHARSET "ISO-8859-1";
+
+#body{
+	background-color:#E0F8F5;
+}
+
+#footerDiv {
+	border-top-width: 5px;
+	background-color:#B9EDE6;
+	text-align: center;
+}
+
+#searchBar{
+	border: 5px;
+	
+}
