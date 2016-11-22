@@ -1,3 +1,29 @@
 body {
-    background-color: lightblue;
+    background-color: #E0F8F5;
+}
+
+#footerDiv {
+	border-top-width: 5px;
+	background-color:#B9EDE6;
+	text-align: center;
+}
+
+#searchBar{
+	border: 5px;
+	
+}
+
+#standard-Registration {
+	text-align: left;
+	width: 250px;
+}
+
+#standard-Registration input {
+	text-align: left;
+	width: 100%;
+}
+
+#standard-Registration #submitButton {
+	text-align: left;
+	width: 50%;
 }

@@ -17,7 +17,7 @@
 
 <style>
 body {
-	background-color: lightblue;
+	background-color: #E0F8F5;
 }
 </style>
 
@@ -38,14 +38,14 @@ body {
 		</nav>
 
 		<div id="searchBar">
-			<form class="form-inline">
-					<label for="searchInput"></label> <input type="text"
-						placeholder="Enter Text to Search" class="form-control"
+			<form class="form-inline" action="searchDb.jsp" method="post">
+					<label for="searchInput"></label> 
+					<input name="name" type="text" placeholder="Enter Text to Search" class="form-control"
 						id="searchInput"> 
-					<select>
-						<option value="Doctor">Doctor</option>
-						<option value="Location">Location</option>
-						<option value="Specialty">Specialty</option>
+					<select name="TypeToSearch">
+						<option  value="Doctor">Doctor</option>
+						<option  value="Location">Location</option>
+						<option  value="Specialty">Specialty</option>
 					</select>
 					<div class="container">
 					<br />

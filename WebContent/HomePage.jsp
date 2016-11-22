@@ -17,35 +17,42 @@ body {
 
 </head>
 <body>
-<nav class="navbar navbar-inverse">
-			<div class="container-fluid">
-				<div class="navbar-header">
-					<a class="navbar-brand">Medibase</a>
-				</div>
-				<ul class="nav navbar-nav">
-					<li class="active"><a href="HomePage_V2.jsp">Home</a></li>
-					<li><a href="findMD.jsp">Find MD</a></li>
-					<li><a href="HomePage.jsp">Register/New Account</a></li>
-				</ul>
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand">Medibase</a>
 			</div>
-		</nav>
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="HomePage_V2.jsp">Home</a></li>
+				<li><a href="findMD.jsp">Find MD</a></li>
+				<li><a href="HomePage.jsp">Register/New Account</a></li>
+			</ul>
+		</div>
+	</nav>
 
-<center>
+	<center>
 
-	<p>
-		<img src="Medibase.png" alt="Medi Image" />
-	</p>
+		<p>
+			<img src="Medibase.png" alt="Medi Image" />
+		</p>
 
-	<br />
-	<form action="Login.jsp" method="post">
-		Email or Username:<input type="text" name="emailuser" /><br /> <br />
-		Password:<input type="password" name="password" /><br /> <br /> <input
-			type="submit" value="Login" />
-	</form>
-	<form action="RegisterPage.jsp" method="post">
-		<input type="submit" value="Register" />
-	</form>
-</center>
+		<br />
+		<form id="standard-Registration" action="Login.jsp" method="post">
+			<div class="form-group">
+				<input placeholder="Email or UserName" type="text" name="emailuser" /><br />
+				<br /> <input placeholder="Password" type="password"
+					name="password" /><br /> <br /> <input id="submitButton"
+					type="submit" value="Login" />
+		</form>
+		<br />
+		<br />
+		<form action="RegisterPage.jsp" method="post">
+			<input id="submitButton" type="submit" value="Register" />
+			</div>
+		</form>
+	</center>
 
-<hr />
+
+
+	<hr />
 </body>

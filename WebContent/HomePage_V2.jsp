@@ -30,7 +30,7 @@ body {
 	background-color:#B9EDE6;
 	text-align: center;
 }
-searchBar{
+#searchBar{
 	border: 5px;
 	
 }

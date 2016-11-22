@@ -1,12 +1,45 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
-</head>
-<body>
+<%@ page import="java.sql.*"%>
+<%
 
-</body>
-</html>
+boolean status = false;
+Connection connnection = null;
+PreparedStatement st = null;
+ResultSet rs = null;
+String sqlDoctor = "select * from ";
+String sqlLocation = "select * from ";
+
+String name = request.getParameter("name");
+String typeToSearch = request.getParameter("TypeToSearch");
+
+try {
+	Class.forName("com.mysql.jdbc.Driver");
+	connnection = DriverManager.getConnection("jdbc:mysql://localhost:3306/medibase", "root", "Zworld78");	
+	
+	if(typeToSearch.matches("Doctor"))
+		st = connnection.prepareStatement(sqlDoctor);
+	else if(typeToSearch.matches("Location"))
+		st = connnection.prepareStatement(sqlLocation);
+	else
+	{
+		//shit hit the fan
+	}
+	
+	st.setString(1, name);
+	
+	rs = st.executeQuery();
+	status = rs.next();
+	
+	
+	
+}catch (Exception e) {
+	System.out.println(e);
+} finally {
+
+
+}
+
+
+
+
+
+%>
