@@ -1,4 +1,8 @@
 <%@ page import="java.sql.*"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
+<fmt:message key="loginsuccess" var="loginsuccess" />
+<fmt:message key="registermessage" var="registermessage" />
 <%
 	boolean status = false;
 	Connection con = null;

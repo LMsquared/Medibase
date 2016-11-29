@@ -1,0 +1,10 @@
+<%
+		String language = String.valueOf(session.getAttribute("locale_language"));
+		String country = String.valueOf(session.getAttribute("locale_country"));
+		Locale currentLocale;
+		if (language == null || country == null)
+			currentLocale = new Locale("en", "US");
+		else
+			currentLocale = new Locale(language, country);
+		ResourceBundle bundle = ResourceBundle.getBundle("Bundle", currentLocale);
+	%>

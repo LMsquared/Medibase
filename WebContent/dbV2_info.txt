@@ -1,0 +1,42 @@
+CREATE DATABASE Medibase;
+USE Medibase;
+
+CREATE TABLE user_table (
+    userId INT NOT NULL AUTO_INCREMENT,
+    medicalId INT auto_increment,
+    username VARCHAR(25) NOT NULL,
+    password VARCHAR(25) NOT NULL,
+    email VARCHAR(255),
+    PRIMARY KEY (userId),
+    PRIMARY KEY (medicalId)
+);
+                                
+
+CREATE TABLE userMedical_table (
+    medicalId INT NOT NULL,
+    street VARCHAR(100),
+    phoneNumber VARCHAR(50),
+    credentials TEXT(500),
+    PRIMARY KEY (medicalId)
+);
+
+CREATE TABLE post_table (
+    PRIMARY KEY (postId),
+    PRIMARY KEY (userId),
+    PRIMARY KEY (medicalId),
+    postId INT NOT NULL AUTO_INCREMENT,
+    parentId INT,
+    updateTime TIMESTAMP,
+    title TEXT(50),
+    content TEXT(500)
+);
+
+CREATE TABLE address(
+primary key (address_key),
+address_key INT NOT NULL AUTO_INCREMENT,
+postalCode varchar(10),
+street varchar(50),
+phoneNumber VARCHAR(50),
+primary key (userId)
+);                   
+                                

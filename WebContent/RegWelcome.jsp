@@ -1,4 +1,6 @@
 <%@ page import="java.sql.*"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%
 	String user = request.getParameter("user");
 	String pword = request.getParameter("pword");
@@ -34,8 +36,11 @@
 	}
 %>
 <html>
+<fmt:message key="registersuccess" var="registersuccess" />
+<fmt:message key="loginhere" var="loginhere" />
+<fmt:message key="gologin" var="gologin" />
 <p>
-	Registration is Successful. <br /> Please Login Here <br />
+	${registersuccess} <br /> ${loginhere} <br />
 </p>
-<a href='HomePage.jsp'>Go to Login</a>
+<a href='HomePage.jsp'>${gologin}</a>
 </html>
