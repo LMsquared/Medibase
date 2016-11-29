@@ -9,7 +9,7 @@
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-<%@ include file="header.jsp"%>
+<%@ include file="included/header.jsp"%>
 
 <link rel="styleSheet" href="WebContent/StyleSheet.css">
 
@@ -32,7 +32,8 @@
 					name="password" /><br /> <br /> <input id="submitButton"
 					type="submit" value="Login" />
 		</form>
-		<br /> <br />
+		<br /> 
+		<br />
 		<form action="RegisterPage.jsp" method="post">
 			<input id="submitButton" type="submit" value="Register" />
 			</div>
@@ -44,7 +45,7 @@
 		<br />
 	</center>
 
-<%@ include file="footer.jsp"%>
+<%@ include file="included/footer.jsp"%>
 
 	<hr />
 </body>

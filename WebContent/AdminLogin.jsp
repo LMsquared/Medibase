@@ -11,7 +11,7 @@
 
 <link rel="styleSheet" href="WebContent/StyleSheet.css">
 
-	<%@ include file="header.jsp"%>
+	<%@ include file="included/header.jsp"%>
 <style>
 
 body {

@@ -70,7 +70,7 @@
 			</div>
 		</div>
 
-		<%@ include file="header.jsp"%>
+		<%@ include file="included/header.jsp"%>
 
 		<div id="searchBar">
 			<form class="form-inline">
@@ -94,7 +94,7 @@
 	<br />
 	<br />
 	
-	<%@ include file="footer.jsp"%>
+	<%@ include file="included/footer.jsp"%>
 
 	</footer>
 </body>

@@ -17,7 +17,7 @@
 
 
 
-<%@ include file="header.jsp" %>
+<%@ include file="included/header.jsp" %>
 
 	<center>
 
@@ -48,6 +48,6 @@
 	</center>
 
 
-<%@ include file="footer.jsp" %>
+<%@ include file="included/footer.jsp" %>
 	<hr />
 </body>

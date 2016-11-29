@@ -12,25 +12,14 @@
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+<%@ include file="included/header.jsp" %>
+
 <link rel="stylesheet" type="text/css" href="WebContent/StyleSheet.css" />
 
 
 </head>
 <body>
 
-	<nav class="navbar navbar-inverse">
-		<div class="container-fluid">
-			<div class="navbar-header">
-				<a class="navbar-brand">Medibase</a>
-			</div>
-			<ul class="nav navbar-nav">
-				<li class="active"><a href="HomePage_V2.jsp">Home</a></li>
-				<li><a href="findMD.jsp">Find MD</a></li>
-				<li><a href="HomePage.jsp">Register/New Account</a></li>
-			</ul>
-		</div>
-	</nav>
-	
 
 	<div id="searchBar">
 		<form class="form-inline" action="searchDb.jsp" method="post">
@@ -52,9 +41,7 @@
 	
 	<footer>
 		<br /> <br />
-		<div id="footerDiv">
-			<a href="AboutUs">About Us</a>
-		</div>
+<%@ include file="included/footer.jsp" %>
 	</footer>
 </body>
 </html>

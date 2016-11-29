@@ -14,7 +14,7 @@
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-<%@ include file="header.jsp"%>
+<%@ include file="included/header.jsp"%>
 
 <link rel="stylesheet" type="text/css"
 	href="WebContent/WEB-INF/styles/main.css" />
@@ -40,6 +40,6 @@
 	</script>
 
 
-<%@ include file="footer.jsp"%>
+<%@ include file="included/footer.jsp"%>
 </body>
 </html>
