@@ -59,7 +59,7 @@ body {
 				</div>
 
 				<div class="item">
-					<a href="HomePage.jsp"> <img src="medical-banner.jpg"
+					<a href="MDLogin.jsp"> <img src="medical-banner.jpg"
 						alt="medical banner" absolute-width="100%" absolute-height="100%">
 					</a>
 				</div>
