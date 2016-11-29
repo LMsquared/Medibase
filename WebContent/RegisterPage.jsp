@@ -12,7 +12,7 @@
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+<%@ include file="header.jsp" %>
 <style>
 body {
 	background-color: #E0F8F5;
@@ -38,19 +38,6 @@ body {
 </head>
 <body>
 
-	<nav class="navbar navbar-inverse">
-	<div class="container-fluid">
-		<div class="navbar-header">
-			<a class="navbar-brand">Medibase</a>
-		</div>
-		<ul class="nav navbar-nav">
-			<li class="active"><a href="HomePage_V2.jsp">Home</a></li>
-			<li><a href="findMD.jsp">Find MD</a></li>
-			<li><a href="HomePage.jsp">Register/New Account</a></li>
-		</ul>
-	</div>
-	</nav>
-
 	<hr />
 	<center>
 	<p>
@@ -74,5 +61,7 @@ body {
 		</div>
 	</form>
 	</center>
+	
+	<%@ include file="footer.jsp" %>
 </body>
 </html>

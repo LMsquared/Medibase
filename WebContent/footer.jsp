@@ -15,6 +15,9 @@
 
 </head>
 <body>
+<br />
+<br />
+<br />
 		<div id="footerDiv">
 		<a href="AboutUs">About Us</a> &nbsp;
 		<a href="ContactUs">Contact Us</a>

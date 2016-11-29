@@ -9,12 +9,14 @@
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+<%@ include file="header.jsp"%>
+
 <link rel="styleSheet" href="WebContent/StyleSheet.css">
 
 </head>
 <body>
 
-	<%@ include file="header.jsp"%>
+	
 	
 	<center>
 
@@ -39,10 +41,10 @@
 		<a href="MDLogin.jsp">
    			<input type="button" value="MD Login" />
 		</a>
-		
+		<br />
 	</center>
 
-
+<%@ include file="footer.jsp"%>
 
 	<hr />
 </body>

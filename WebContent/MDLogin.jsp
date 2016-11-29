@@ -48,6 +48,6 @@
 	</center>
 
 
-
+<%@ include file="footer.jsp" %>
 	<hr />
 </body>
