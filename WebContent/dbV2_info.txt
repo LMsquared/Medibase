@@ -22,6 +22,7 @@ CREATE TABLE userMedical_table (
     PRIMARY KEY (medicalId)
 );
 
+CREATE TABLE userposts_table(
 	post_id INT NOT NULL AUTO_INCREMENT,
     
 	doctorMedical_id INT NOT NULL,

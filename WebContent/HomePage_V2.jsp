@@ -12,26 +12,13 @@
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-<link rel="stylesheet" type="text/css" href="WebContent/StyleSheet.css" />
+<link rel="stylesheet" type="text/css" href="WebContent/StyleSheet.css"/>
 
 <style>
 .carousel-inner>.item>img, .carousel-inner>.item>a>img {
 	absolute-width: 100%;
 	absolute-height: 100%;
 	margin: auto;
-}
-
-body {
-	background-color: #E0F8F5;
-}
-#footerDiv {
-	border-top-width: 5px;
-	background-color:#B9EDE6;
-	text-align: center;
-}
-#searchBar{
-	border: 5px;
-	
 }
 </style>
 
@@ -106,9 +93,9 @@ body {
 	<footer>
 	<br />
 	<br />
-		<div id="footerDiv">
-		<a href="AboutUs">About Us</a>
-		</div>
+	
+	<%@ include file="footer.jsp"%>
+
 	</footer>
 </body>
 </html>

@@ -1,11 +1,11 @@
-body {
-    background-color: #E0F8F5;
+.carousel-inner>.item>img, .carousel-inner>.item>a>img {
+	absolute-width: 100%;
+	absolute-height: 100%;
+	margin: auto;
 }
 
-#footerDiv {
-	border-top-width: 5px;
-	background-color:#B9EDE6;
-	text-align: center;
+body {
+    background-color: #E0F8F5;
 }
 
 #searchBar{
