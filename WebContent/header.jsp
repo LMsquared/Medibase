@@ -9,14 +9,8 @@
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<style>
-body {
-	background-color: #E0F8F5;
-}
-</style>
-
-</head>
 <body>
+
 	<nav class="navbar navbar-inverse">
 		<div class="container-fluid">
 			<div class="navbar-header">
@@ -25,34 +19,10 @@ body {
 			<ul class="nav navbar-nav">
 				<li class="active"><a href="HomePage_V2.jsp">Home</a></li>
 				<li><a href="findMD.jsp">Find MD</a></li>
-				<li><a href="HomePage.jsp">Register/New Account</a></li>
+				<li><a href="LoginPage.jsp">Register/New Account</a></li>
 			</ul>
 		</div>
 	</nav>
-
-	<center>
-
-		<p>
-			<img src="Medibase.png" alt="Medi Image" />
-		</p>
-
-		<br />
-		<form id="standard-Registration" action="Login.jsp" method="post">
-			<div class="form-group">
-				<input placeholder="Email or UserName" type="text" name="emailuser" /><br />
-				<br /> <input placeholder="Password" type="password"
-					name="password" /><br /> <br /> <input id="submitButton"
-					type="submit" value="Login" />
-		</form>
-		<br />
-		<br />
-		<form action="RegisterPage.jsp" method="post">
-			<input id="submitButton" type="submit" value="Register" />
-			</div>
-		</form>
-	</center>
-
-
-
-	<hr />
+	
 </body>
+</html>

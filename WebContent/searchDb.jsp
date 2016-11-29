@@ -5,15 +5,15 @@ boolean status = false;
 Connection connnection = null;
 PreparedStatement st = null;
 ResultSet rs = null;
-String sqlDoctor = "select * from ";
-String sqlLocation = "select * from ";
+String sqlDoctor = "select * from user_table where (firstName=? OR lastName=?)";
+String sqlLocation = "select * from adress where name=?";
 
 String name = request.getParameter("name");
 String typeToSearch = request.getParameter("TypeToSearch");
 
 try {
 	Class.forName("com.mysql.jdbc.Driver");
-	connnection = DriverManager.getConnection("jdbc:mysql://localhost:3306/medibase", "root", "Zworld78");	
+	connnection = DriverManager.getConnection("jdbc:mysql://localhost:3306/medibase", "root", "Zworld78");
 	
 	if(typeToSearch.matches("Doctor"))
 		st = connnection.prepareStatement(sqlDoctor);
@@ -28,7 +28,6 @@ try {
 	
 	rs = st.executeQuery();
 	status = rs.next();
-	
 	
 	
 }catch (Exception e) {

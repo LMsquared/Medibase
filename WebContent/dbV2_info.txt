@@ -4,7 +4,10 @@ USE Medibase;
 CREATE TABLE user_table (
     userId INT NOT NULL AUTO_INCREMENT,
     medicalId INT auto_increment,
-    username VARCHAR(25) NOT NULL,
+    firstName VARCHAR(25) NOT NULL,
+    lastName VARCHAR(25) NOT NULL,
+    userName VARCHAR(25) NOT NULL,
+    userName VARCHAR(25) NOT NULL,
     password VARCHAR(25) NOT NULL,
     email VARCHAR(255),
     PRIMARY KEY (userId),
@@ -34,6 +37,7 @@ CREATE TABLE post_table (
 CREATE TABLE address(
 primary key (address_key),
 address_key INT NOT NULL AUTO_INCREMENT,
+name varchar(75),
 postalCode varchar(10),
 street varchar(50),
 phoneNumber VARCHAR(50),

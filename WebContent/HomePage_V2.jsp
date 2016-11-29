@@ -12,8 +12,7 @@
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-<link rel="stylesheet" type="text/css"
-	href="WebContent/WEB-INF/styles/main.css" />
+<link rel="stylesheet" type="text/css" href="WebContent/StyleSheet.css" />
 
 <style>
 .carousel-inner>.item>img, .carousel-inner>.item>a>img {
@@ -84,18 +83,7 @@ body {
 			</div>
 		</div>
 
-		<nav class="navbar navbar-inverse">
-			<div class="container-fluid">
-				<div class="navbar-header">
-					<a class="navbar-brand">Medibase</a>
-				</div>
-				<ul class="nav navbar-nav">
-					<li class="active"><a href="HomePage_V2.jsp">Home</a></li>
-					<li><a href="findMD.jsp">Find MD</a></li>
-					<li><a href="HomePage.jsp">Register/New Account</a></li>
-				</ul>
-			</div>
-		</nav>
+		<%@ include file="header.jsp"%>
 
 		<div id="searchBar">
 			<form class="form-inline">
