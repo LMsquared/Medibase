@@ -11,34 +11,44 @@
 
 <link rel="styleSheet" href="WebContent/StyleSheet.css">
 
+	<%@ include file="header.jsp"%>
+<style>
+
+body {
+	background-color: #79F373;
+}
+
+</style>
+
 </head>
 <body>
 
-	<%@ include file="header.jsp"%>
+
 	
 	<center>
 
 		<p>
-			<img src="Medibase.png" alt="Medi Image" />
+			<img src="Admin.png" alt="Admin Image" />
 		</p>
 
 		<br />
-		<form class="standard-Registration" action="Login.jsp" method="post">
+		<form class="standard-Registration" action="AdminLoginAction.jsp" method="post">
 			<div class="form-group">
-				<input placeholder="Email or UserName" type="text" name="emailuser" /><br />
+			<input placeholder="Admin Key" type="number" name="Key" />
+					<br /> 
+					<br /> 
+				<input placeholder="Admin ID" type="text" name="Admin ID" /><br />
 				<br /> <input placeholder="Password" type="password"
-					name="password" /><br /> <br /> <input id="submitButton"
-					type="submit" value="Login" />
+					name="password" />
+					<br /> 
+					<br /> 
+					<input id="submitButton" type="submit" value="Login" />
 		</form>
 		<br /> <br />
 		<form action="RegisterPage.jsp" method="post">
 			<input id="submitButton" type="submit" value="Register" />
 			</div>
 		</form>
-		
-		<a href="MDLogin.jsp">
-   			<input type="button" value="MD Login" />
-		</a>
 		
 	</center>
 

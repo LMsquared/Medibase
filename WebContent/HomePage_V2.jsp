@@ -52,7 +52,7 @@ body {
 			<div class="carousel-inner" role="listbox">
 
 				<div class="item active">
-					<a href="HomePage.jsp"> <img src="Medibase-wt.png"
+					<a href="LoginPage.jsp"> <img src="Medibase-wt.png"
 						alt="Patient" alt="Medibase logo" absolute-width="100%"
 						absolute-height="100%">
 					</a>
@@ -65,7 +65,7 @@ body {
 				</div>
 
 				<div class="item">
-					<a href="HomePage.jsp"> <img src="adminLogo-wt.png"
+					<a href="AdminLogin.jsp"> <img src="adminLogo-wt.png"
 						alt="admin Logo" absolute-width="100%" absolute-height="100%">
 					</a>
 				</div>

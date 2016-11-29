@@ -14,13 +14,26 @@ CREATE TABLE user_table (
     PRIMARY KEY (medicalId)
 );
                                 
-
 CREATE TABLE userMedical_table (
     medicalId INT NOT NULL,
     street VARCHAR(100),
     phoneNumber VARCHAR(50),
     credentials TEXT(500),
     PRIMARY KEY (medicalId)
+);
+
+	post_id INT NOT NULL AUTO_INCREMENT,
+    
+	doctorMedical_id INT NOT NULL,
+    
+	content VARCHAR(255) NOT NULL,
+    
+	username VARCHAR(255) NOT NULL,
+    
+	datePosted VARCHAR(255) NOT NULL,
+    
+	PRIMARY KEY (post_id)
+
 );
 
 CREATE TABLE post_table (

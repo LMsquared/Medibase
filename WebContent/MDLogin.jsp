@@ -10,12 +10,12 @@
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	
-
+<link rel="styleSheet" href="WebContent/StyleSheet.css">
 <title>MD Login</title>
 </head>
 <body>
 
-<link rel="styleSheet" href="WebContent/StyleSheet.css">
+
 
 <%@ include file="header.jsp" %>
 

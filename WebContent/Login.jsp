@@ -4,8 +4,8 @@
 	Connection con = null;
 	PreparedStatement st = null;
 	ResultSet rs = null;
-	String sqlemail = "select * from accounts where email=? and password=?";
-	String sqluser = "select * from accounts where username=? and password=?";
+	String sqlemail = "select * from user_table where email=? and password=?";
+	String sqluser = "select * from user_table where username=? and password=?";
 	String emailuser = request.getParameter("emailuser");
 	String pword = request.getParameter("password");
 

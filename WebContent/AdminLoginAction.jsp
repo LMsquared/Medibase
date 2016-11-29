@@ -2,7 +2,7 @@
 <%
 
 
-	final int key = 1001;
+	final int key = 987654;
 
 	boolean status = false;
 	Connection con = null;
@@ -10,13 +10,13 @@
 	ResultSet rs = null;
 	String sqlemail = "select * from user_table where email=? and password=?";
 	String sqluser = "select * from user_table where username=? and password=?";
-	String emailuser = request.getParameter("emailuser");
+	String emailuser = request.getParameter("Admin ID");
 	String pword = request.getParameter("password");
-	String employee = request.getParameter("employee");
+	String AdminKey = request.getParameter("Key");
 	
-	int employeeKey = Integer.parseInt(employee);
+	int employeeKey = Integer.parseInt(AdminKey);
 	if(employeeKey != key)
-		out.print("<p style=\"color:red\">Sorry Employee Number incorrect</p> <a href='HomePage.jsp'>Back to Home Page?</a>");
+		out.print("<p style=\"color:red\">Incorrect Key</p> <a href='HomePage.jsp'>Back to Home Page?</a>");
 
 	try {
 		Class.forName("com.mysql.jdbc.Driver");
