@@ -6,6 +6,7 @@ Connection connnection = null;
 PreparedStatement st = null;
 ResultSet rs = null;
 String sqlDoctor = "select * from user_table where (firstName=? OR lastName=?)";
+//String sqlDoctor = "SELECT DISTINCT(?) FROM mytable WHERE firstName LIKE '%?%' OR lastName LIKE '%?%'";
 String sqlLocation = "select * from adress where name=?";
 
 String name = request.getParameter("name");

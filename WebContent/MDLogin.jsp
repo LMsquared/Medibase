@@ -22,7 +22,7 @@
 	<center>
 
 		<p>
-			<img src="md.png" alt="md Image" />
+			<img src="imgResource/md.png" alt="md Image" />
 		</p>
 
 		<br />
@@ -48,6 +48,7 @@
 	</center>
 
 
-<%@ include file="included/footer.jsp" %>
+
 	<hr />
 </body>
+<%@ include file="Footer.jsp"%>

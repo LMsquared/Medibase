@@ -1,5 +1,7 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 <title>Medibase Home</title>
 <meta charset="utf-8">
@@ -13,14 +15,6 @@
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 <link rel="stylesheet" type="text/css" href="WebContent/StyleSheet.css"/>
-
-<style>
-.carousel-inner>.item>img, .carousel-inner>.item>a>img {
-	absolute-width: 100%;
-	absolute-height: 100%;
-	margin: auto;
-}
-</style>
 
 </head>
 <body>
@@ -39,20 +33,20 @@
 			<div class="carousel-inner" role="listbox">
 
 				<div class="item active">
-					<a href="LoginPage.jsp"> <img src="Medibase-wt.png"
+					<a href="LoginPage.jsp"> <img src="imgResource/Medibase-wt.png"
 						alt="Patient" alt="Medibase logo" absolute-width="100%"
 						absolute-height="100%">
 					</a>
 				</div>
 
 				<div class="item">
-					<a href="MDLogin.jsp"> <img src="medical-banner.jpg"
+					<a href="MDLogin.jsp"> <img src="imgResource/medical-banner.jpg"
 						alt="medical banner" absolute-width="100%" absolute-height="100%">
 					</a>
 				</div>
 
 				<div class="item">
-					<a href="AdminLogin.jsp"> <img src="adminLogo-wt.png"
+					<a href="AdminLogin.jsp"> <img src="imgResource/adminLogo-wt.png"
 						alt="admin Logo" absolute-width="100%" absolute-height="100%">
 					</a>
 				</div>
@@ -74,29 +68,28 @@
 
 		<div id="searchBar">
 			<form class="form-inline">
-					<label for="searchInput"></label> <input type="text"
-						placeholder="Enter Text to Search" class="form-control"
-						id="searchInput"> 
+					<label for="searchInput"></label> 
+					<fmt:message key="searchtext" var="searchtext" />
+					<input type="text" placeholder="${searchtext}" class="form-control" id="searchInput"> 
 					<select>
-						<option value="Doctor">Doctor</option>
-						<option value="Location">Location</option>
-						<option value="Specialty">Specialty</option>
+						<fmt:message key="doctor" var="doctor" /> 
+						<fmt:message key="location" var="location" />
+						<fmt:message key="specialty" var="specialty" />
+						<option value="Doctor">${doctor}</option>
+						<option value="Location">${location}</option>
+						<option value="Specialty">${specialty}</option>
 					</select>
 					<div class="container">
 					<br />
-						<button type="submit" class="btn btn-primary">Search</button>
+						<fmt:message key="search" var="search" />
+						<button type="submit" class="btn btn-primary">${search}</button>
 					</div>
 			</form>
 		</div>
 	</div>
+<br /><br /><br /><br /><br /><br />
 
-	<footer>
-	<br />
-	<br />
-	
-	<%@ include file="included/footer.jsp"%>
-
-	</footer>
 </body>
+	<%@ include file="Footer.jsp"%>
 </html>
 

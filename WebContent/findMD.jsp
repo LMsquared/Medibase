@@ -14,7 +14,7 @@
 
 <%@ include file="included/header.jsp" %>
 
-<link rel="stylesheet" type="text/css" href="WebContent/StyleSheet.css" />
+<link rel="stylesheet" type="text/css" href="StyleSheet.css" />
 
 
 </head>
@@ -23,26 +23,32 @@
 
 	<div id="searchBar">
 		<form class="form-inline" action="searchDb.jsp" method="post">
-			<label for="searchInput"></label> <input name="name" type="text"
-				placeholder="Enter Text to Search" class="form-control"
-				id="searchInput"> <select name="TypeToSearch">
-				<option value="Doctor">Doctor</option>
-				<option value="Location">Location</option>
-				<option value="Specialty">Specialty</option>
+			<label for="searchInput"></label> 
+			<fmt:message key="searchtext" var="searchtext" />
+			<input type="text" placeholder="${searchtext}" class="form-control" id="searchInput"> 
+			<select name="TypeToSearch">
+				<fmt:message key="doctor" var="doctor" /> 
+				<fmt:message key="location" var="location" />
+				<fmt:message key="specialty" var="specialty" />
+				<option value="Doctor">${doctor}</option>
+				<option value="Location">${location}</option>
+				<option value="Specialty">${specialty}</option>
 			</select>
 			<div class="container">
 				<br />
-				<button type="submit" class="btn btn-primary">Search</button>
+				<fmt:message key="search" var="search" />
+						<button type="submit" class="btn btn-primary">${search}</button>
 			</div>
 		</form>
 	</div>
 	</div>
 	
-	
-	<footer>
-		<br /> <br />
-<%@ include file="included/footer.jsp" %>
-	</footer>
+	<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+	<br /><br /><br /><br /><br /><br />
+
 </body>
+
+	<%@ include file="Footer.jsp"%>
+
 </html>
 

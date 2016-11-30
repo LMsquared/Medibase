@@ -13,26 +13,7 @@
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <%@ include file="included/header.jsp" %>
-<style>
-body {
-	background-color: #E0F8F5;
-}
 
-#standard-Registration {
-	text-align: left;
-	width: 250px;
-}
-
-#standard-Registration input {
-	text-align: left;
-	width: 100%;
-}
-
-#standard-Registration #submitButton {
-	text-align: left;
-	width: 50%;
-}
-</style>
 
 <title>Sign Up</title>
 </head>
@@ -41,7 +22,7 @@ body {
 	<hr />
 	<center>
 	<p>
-		<img src="Medibase.png" alt="Medi Image" />
+		<img src="imgResource/Medibase.png" alt="Medi Image" />
 	</p>
 	<p>Enter your information below and hit Register to complete your
 		account creation.</p>
@@ -61,7 +42,7 @@ body {
 		</div>
 	</form>
 	</center>
-	
-	<%@ include file="included/footer.jsp" %>
+
 </body>
+<%@ include file="Footer.jsp"%>
 </html>

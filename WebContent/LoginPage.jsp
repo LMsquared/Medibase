@@ -21,21 +21,24 @@
 	<center>
 
 		<p>
-			<img src="Medibase.png" alt="Medi Image" />
+			<img src="imgResource/Medibase.png" alt="Medi Image" />
 		</p>
 
 		<br />
 		<form class="standard-Registration" action="Login.jsp" method="post">
 			<div class="form-group">
-				<input placeholder="Email or UserName" type="text" name="emailuser" /><br />
-				<br /> <input placeholder="Password" type="password"
-					name="password" /><br /> <br /> <input id="submitButton"
-					type="submit" value="Login" />
+				<fmt:message key="emailuser" var="emailuser" />
+				<input placeholder="${emailuser}" type="text" name="emailuser" />
+				<fmt:message key="password" var="password" />
+				<br /> <br /> <input placeholder="${password}" type="password" name="password" />
+				<fmt:message key="login" var="login" />
+				<br /> <br /> <input id="submitButton" type="submit" value="${login}" />
 		</form>
 		<br /> 
 		<br />
 		<form action="RegisterPage.jsp" method="post">
-			<input id="submitButton" type="submit" value="Register" />
+			<fmt:message key="register" var="register" />
+			<input id="submitButton" type="submit" value="${register}" />
 			</div>
 		</form>
 		
@@ -45,7 +48,7 @@
 		<br />
 	</center>
 
-<%@ include file="included/footer.jsp"%>
 
 	<hr />
 </body>
+<%@ include file="Footer.jsp"%>

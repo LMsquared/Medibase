@@ -22,15 +22,11 @@ body {
 
 </head>
 <body>
-
-
 	
 	<center>
-
 		<p>
-			<img src="Admin.png" alt="Admin Image" />
+			<img src="imgResource/Admin.png" alt="Admin Image" />
 		</p>
-
 		<br />
 		<form class="standard-Registration" action="AdminLoginAction.jsp" method="post">
 			<div class="form-group">

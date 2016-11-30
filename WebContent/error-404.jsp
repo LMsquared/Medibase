@@ -40,6 +40,7 @@
 	</script>
 
 
-<%@ include file="included/footer.jsp"%>
+
 </body>
+<%@ include file="Footer.jsp"%>
 </html>

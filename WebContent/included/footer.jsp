@@ -1,28 +1,14 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<head><link rel="stylesheet" type="text/css" href=".\StyleSheet.css"></head>
 
-<style>
-#footerDiv {
-	border-top-width: 5px;
-	background-color:#B9EDE6;
-	text-align: center;
-}
-</style>
+<footer>
+<fmt:message key="about" var="about" />
+		<a href="about.jsp">${about}</a>
 
-</head>
-<body>
-<br />
-<br />
-<br />
-		<div id="footerDiv">
-		<a href="AboutUs">About Us</a> &nbsp;
-		<a href="ContactUs">Contact Us</a>
-		<br />
-		<img src="Medibase.png" alt="Medi Image" />
-		</div>
-</body>
+</footer>
 </html>
