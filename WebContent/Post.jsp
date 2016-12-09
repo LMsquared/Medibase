@@ -10,7 +10,7 @@
 	try {
 		Class.forName("com.mysql.jdbc.Driver");
 		Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/medibase", "root",
-				"QwErTy321");
+				"");
 		st = con.prepareStatement(sql);
 		//ResultSet rs;
 		System.out.println("docmed_id : "+doctorMedical_id); //0 = good
@@ -27,7 +27,7 @@
 			//session.setAttribute("userid", user);
 			// out.print("Registration is Successful. Please Login Here"+<a href='HomePage.jsp'>Go to Login</a>");
 		} else {
-			response.sendRedirect("HomePage.jsp");
+			response.sendRedirect("HomePage_V2.jsp");
 		}
 		
 		//response.sendRedirect("HomePage.jsp");

@@ -4,7 +4,7 @@
 
 
 <head>
-
+<link rel="stylesheet" type="text/css" href="Initial.css">
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,30 +14,43 @@
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-<link rel="stylesheet" type="text/css" href="StyleSheet.css">
+<style>
+body {
+	background-color: #E0F8F5;
+}
+input.submitComment {
+    width: 30em;  height: 2em;
+}
+#rcorners {
+    border-radius: 25px;
+    border: 4px solid #73AD21;
+    padding: 20px; 
+    width: 900px;
+    height: 300px;    
+}
+</style>
 </head>
 <body>
-	<nav class="navbar navbar-inverse">
-		<div class="container-fluid">
-			<div class="navbar-header">
-				<a class="navbar-brand">Medibase</a>
-			</div>
-			<ul class="nav navbar-nav">
-				<li class="active"><a href="HomePage_V2.jsp">Home</a></li>
-				<li><a href="findMD.jsp">Find MD</a></li>
-				<li><a href="HomePage.jsp">Register/New Account</a></li>
-			</ul>
-		</div>
-	</nav>
 
-<center>
+<%@ include file="included/header.jsp" %>
+
+<div class="media" id="rcorners">
+  	<div class="media-left">
+		<img src="avatar.png" class="media-object" style="width:200px">
+	</div>
+	<div class="media-body">
+    	<h4 class="media-heading">John Doe <small><i>Posted on February 19, 2016</i></small></h4>
+    	<p>Lorem ipsum dolor sit amet, sed do eiut labore et dolore magna aliqua. Epsilon apples covered in bacon wrapped pancakes.</p>
+	</div>
+</div>
+
+<!-- <center>
 	<p>
 	<img src="Medibase.png" alt="Medi Image" />
 	</p>
 	<br />
 </center>
-
+ -->
 <%
 boolean status = false;
 Connection connnection = null;
@@ -51,7 +64,7 @@ String sqlPosts = "select * from userposts_table"; //where doctorMedical_id = //
 List<Object> dataList=new ArrayList<Object>();
 try {
 	Class.forName("com.mysql.jdbc.Driver");
-	connnection = DriverManager.getConnection("jdbc:mysql://localhost:3306/medibase", "root", "QwErTy321");	
+	connnection = DriverManager.getConnection("jdbc:mysql://localhost:3306/medibase", "root", "Mifa1588");	
 	st = connnection.prepareStatement(sqlPosts);
 	rs = st.executeQuery();
 	//status = rs.next();
@@ -90,11 +103,13 @@ for (itr=data.iterator(); itr.hasNext(); )
 %>
 <div class="media">
   	<div class="media-left media-top">
-		<img src="avatar.png" class="media-object" style="width:60px">
+		<img src="WebContent/imgResource/s.png" class="media-object" style="width:60px">
 	</div>
 	<div class="media-body">
     	<h4 class="media-heading"><%=itr.next()%> <small><i>Posted on <%=itr.next()%></i></small></h4>
+    	<div class="FormLabel" style="width:800px; word-wrap:break-word;" >
     	<p><%=itr.next()%></p>
+    	</div>
 	</div>
 </div>
 
@@ -115,5 +130,3 @@ for (itr=data.iterator(); itr.hasNext(); )
 
 	<hr />
 </body>
-
-<%@ include file="Footer.jsp"%>

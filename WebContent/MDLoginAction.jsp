@@ -2,8 +2,6 @@
 <%
 
 
-	final int key = 1001;
-
 	boolean status = false;
 	Connection con = null;
 	PreparedStatement st = null;
@@ -12,22 +10,17 @@
 	String sqluser = "select * from user_table where username=? and password=?";
 	String emailuser = request.getParameter("emailuser");
 	String pword = request.getParameter("password");
-	String employee = request.getParameter("employee");
 	
-	int employeeKey = Integer.parseInt(employee);
-	if(employeeKey != key)
-		out.print("<p style=\"color:red\">Sorry Employee Number incorrect</p> <a href='HomePage.jsp'>Back to Home Page?</a>");
-
 	try {
 		Class.forName("com.mysql.jdbc.Driver");
-		con = DriverManager.getConnection("jdbc:mysql://localhost:3306/medibase", "root", "Zworld78");
+		con = DriverManager.getConnection("jdbc:mysql://localhost:3306/medibase", "root", "");
 		st = con.prepareStatement(sqlemail);
 		st.setString(1, emailuser);
 		st.setString(2, pword);
 		rs = st.executeQuery();
 		status = rs.next();
 		if (status == true)
-			out.print("<p>Login is Successful. <br /></p> <a href='HomePage.jsp'>Back to Home Page?</a>");
+			out.print("<p>Login is Successful. <br /></p> <a href='HomePage_V2.jsp'>Back to Home Page?</a>");
 		else {
 			st = con.prepareStatement(sqluser);
 			st.setString(1, emailuser);
@@ -35,9 +28,9 @@
 			rs = st.executeQuery();
 			status = rs.next();
 			if (status == true)
-				out.print("<p>Login is Successful. <br /></p> <a href='HomePage.jsp'>Back to Home Page?</a>");
+				out.print("<p>Login is Successful. <br /></p> <a href='HomePage_V2.jsp'>Back to Home Page?</a>");
 			else
-				out.print("<p style=\"color:red\">Sorry email or password incorrect</p> <a href='HomePage.jsp'>Back to Home Page?</a>");
+				out.print("<p style=\"color:red\">Sorry email or password incorrect</p> <a href='HomePage_V2.jsp'>Back to Home Page?</a>");
 		}	
 	} catch (Exception e) {
 		System.out.println(e);

@@ -34,14 +34,11 @@
 				<input placeholder="Password" type="password" name="password" />
 				<br /> 
 				<br /> 
-				<input placeholder="Employee Number" type="text" name="employee" />
-				<br /> 
-				<br /> 
 				<input id="submitButton" type="submit" value="Login" />
 		</form>
 		<br />
 		<br />
-		<form action="RegisterPage.jsp" method="post">
+		<form action="MDRegisterPage.jsp" method="post">
 			<input id="submitButton" type="submit" value="Register" />
 			</div>
 		</form>

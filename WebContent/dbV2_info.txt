@@ -1,18 +1,6 @@
+DROP DATABASE Medibase;
 CREATE DATABASE Medibase;
 USE Medibase;
-
-CREATE TABLE user_table (
-    userId INT NOT NULL AUTO_INCREMENT,
-    medicalId INT auto_increment,
-    firstName VARCHAR(25) NOT NULL,
-    lastName VARCHAR(25) NOT NULL,
-    userName VARCHAR(25) NOT NULL,
-    userName VARCHAR(25) NOT NULL,
-    password VARCHAR(25) NOT NULL,
-    email VARCHAR(255),
-    PRIMARY KEY (userId),
-    PRIMARY KEY (medicalId)
-);
                                 
 CREATE TABLE userMedical_table (
     medicalId INT NOT NULL,
@@ -20,6 +8,20 @@ CREATE TABLE userMedical_table (
     phoneNumber VARCHAR(50),
     credentials TEXT(500),
     PRIMARY KEY (medicalId)
+);
+
+
+CREATE TABLE user_table (
+    userId INT NOT NULL AUTO_INCREMENT,
+    medicalId INT,
+    firstName VARCHAR(25) NOT NULL,
+    lastName VARCHAR(25) NOT NULL,
+    userName VARCHAR(25) NOT NULL,
+    password VARCHAR(25) NOT NULL,
+    email VARCHAR(255),
+    PRIMARY KEY (userId),
+    FOREIGN KEY (medicalId)
+        REFERENCES userMedical_table (medicalId)
 );
 
 CREATE TABLE userposts_table(
@@ -39,22 +41,27 @@ CREATE TABLE userposts_table(
 
 CREATE TABLE post_table (
     PRIMARY KEY (postId),
-    PRIMARY KEY (userId),
-    PRIMARY KEY (medicalId),
+    userId INT NOT NULL,
+    medicalID INT NOT NULL,
     postId INT NOT NULL AUTO_INCREMENT,
     parentId INT,
     updateTime TIMESTAMP,
     title TEXT(50),
-    content TEXT(500)
+    content TEXT(500),
+    FOREIGN KEY (userId)
+        REFERENCES user_table (userId),
+    FOREIGN KEY (medicalId)
+        REFERENCES userMedical_table (medicalId)
 );
 
-CREATE TABLE address(
-primary key (address_key),
-address_key INT NOT NULL AUTO_INCREMENT,
-name varchar(75),
-postalCode varchar(10),
-street varchar(50),
-phoneNumber VARCHAR(50),
-primary key (userId)
-);                   
-                                
+CREATE TABLE address (
+    PRIMARY KEY (address_key),
+    address_key INT NOT NULL AUTO_INCREMENT,
+    name VARCHAR(75),
+    postalCode VARCHAR(10),
+    street VARCHAR(50),
+    phoneNumber VARCHAR(50),
+    userId INT NOT NULL,
+    FOREIGN KEY (userId)
+        REFERENCES user_table (userId)
+);

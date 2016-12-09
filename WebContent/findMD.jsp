@@ -22,10 +22,10 @@
 
 
 	<div id="searchBar">
-		<form class="form-inline" action="searchDb.jsp" method="post">
+		<form class="form-inline" action="Action/searchDb.jsp" method="post">
 			<label for="searchInput"></label> 
 			<fmt:message key="searchtext" var="searchtext" />
-			<input type="text" placeholder="${searchtext}" class="form-control" id="searchInput"> 
+			<input type="text" placeholder="${searchtext}" class="form-control" id="searchInput" name="searchInput"> 
 			<select name="TypeToSearch">
 				<fmt:message key="doctor" var="doctor" /> 
 				<fmt:message key="location" var="location" />
@@ -37,7 +37,11 @@
 			<div class="container">
 				<br />
 				<fmt:message key="search" var="search" />
-						<button type="submit" class="btn btn-primary">${search}</button>
+						<a href="Blog.jsp">
+   			<input type="button" value="${search}" />
+		</a>
+		
+						<%//<button type="submit" class="btn btn-primary">${search}</button>%>
 			</div>
 		</form>
 	</div>
